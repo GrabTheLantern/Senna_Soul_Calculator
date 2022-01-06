@@ -6,8 +6,10 @@ if souls > 20:
     soulmult = souls // 20
     soulrange = int(soulmult * 20)
     soulcrit = int(soulmult * 10)
-    print('You have at least 20 souls. In addition to ' + str(souldmg) + ' damage, you have an additional range of ' +
-          str(soulrange) + ' and an extra ' + str(soulcrit) + ' crit chance.')
-          
+    if soulcrit == 100:
+        lifesteal = (soulcrit -100) * .35
+        print('With + ' str(souls) + 'You have gain the following bonuses.\n' + str(souldmg)+' damage\n'+ str(soulrange) + ' range\n' + str(soulcrit) + ' crit chance\n' + str(lifesteal)+ ' lifesteal \n')
+    else:
+        print('With + ' str(souls) + 'You have gain the following bonuses.\n' + str(souldmg)+' damage\n'+ str(soulrange) + ' range\n' + str(soulcrit) + ' crit chance\n')
 else:
     print('With ' + str(souls) + ' souls, you have an additional ' + str(souldmg) + ' damage.')
