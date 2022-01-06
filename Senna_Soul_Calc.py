@@ -11,6 +11,6 @@ if souls >= 20:
         soulcrit = 100
         print('With ' + str(souls) + ' souls, you have gain the following bonuses:\n' + str(souldmg)+' damage\n'+ str(soulrange) + ' range\n' + str(soulcrit) + ' crit chance\n' + str(lifesteal)+ ' lifesteal \n')
     else:
-        print('With ' + str(souls) + ' You have gain the following bonuses.\n' + str(souldmg)+' damage\n'+ str(soulrange) + ' range\n' + str(soulcrit) + ' crit chance\n')
+        print('With ' + str(souls) + ' souls, you have gain the following bonuses:\n' + str(souldmg)+' damage\n'+ str(soulrange) + ' range\n' + str(soulcrit) + ' crit chance\n')
 else:
     print('With ' + str(souls) + ' souls, you have an additional ' + str(souldmg) + ' damage.')
